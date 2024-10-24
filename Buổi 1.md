@@ -1,17 +1,3 @@
-I. Tổng quan về java
-    <!-- 1. JAVA là gì? -->
-    <!-- 2. lí do ra đời java -->
-    <!-- 3. cách hoạt động, điều gì xảy ra khi chạy code java(.java)` -->
-   <!--  4. Cấu trúc một chương trình Java -->
-   <!--  5. Package là gì  -->
-<!-- II. syntax cơ bản
-    1. khai báo biến nguyên thủy 
-    2. làm quen với vòng lặp
-    3. Câu lệnh rẽ nhánh 
-    4. Mảng trong java  -->
-III . tổng quan về Class và object 
-    các từ khóa về <!-- this, construct -->, access, modifier, getter, setter, từ khóa static
-
 # WELCOME TO JAVA 
 
 ## I. TỔNG QUAN VỀ JAVA
