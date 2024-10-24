@@ -207,7 +207,7 @@ public void set<tên thuộc tính> (<tham số giá trị mới>) {
 
 }
 //getter
-<kiểu dữ liệu thuộc tính> get<tên thuộc tính> () {
+public <kiểu dữ liệu thuộc tính> get<tên thuộc tính> () {
 
       return this. <tên thuộc tính>;
 
