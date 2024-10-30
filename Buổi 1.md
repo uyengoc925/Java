@@ -1,3 +1,17 @@
+I. Tổng quan về java
+    <!-- 1. JAVA là gì? -->
+    <!-- 2. lí do ra đời java -->
+    <!-- 3. cách hoạt động, điều gì xảy ra khi chạy code java(.java)` -->
+   <!--  4. Cấu trúc một chương trình Java -->
+   <!--  5. Package là gì  -->
+<!-- II. syntax cơ bản
+    1. khai báo biến nguyên thủy 
+    2. làm quen với vòng lặp
+    3. Câu lệnh rẽ nhánh 
+    4. Mảng trong java  -->
+III . tổng quan về Class và object 
+    các từ khóa về <!-- this, construct -->, access, modifier, getter, setter, từ khóa static
+
 # WELCOME TO JAVA 
 
 ## I. TỔNG QUAN VỀ JAVA
@@ -64,6 +78,7 @@ Biến đơn giản là một vùng chứa giá trị, có thể sử dụng nhi
 3. Kiểu dữ liệu 
     1. Kiểu dữ liệu nguyên thủy
     Các kiểu dữ liệu nguyên thủy: boolean, char, byte, short, int, long, float, double.
+    
     2. Kiêu dữ liệu đối tượng 
     Các kiểu dữ liệu đối tượng: String, Array, Double, ....
 ### 2. Làm quen với vòng lặp 
@@ -202,23 +217,31 @@ Cú pháp:
 ```java
 //setter
 public void set<tên thuộc tính> (<tham số giá trị mới>) {
-
-      this. <tên thuộc tính> = <tham số giá trị mới>;
-
+     return this. <tên thuộc tính> = <tham số giá trị mới>;
 }
 //getter
 public <kiểu dữ liệu thuộc tính> get<tên thuộc tính> () {
-
       return this. <tên thuộc tính>;
-
 }
 ```
+7. __Biến Satic__
+Static Variable là biến được khai báo trong một class, nhưng bên ngoài các phương thức, constructor hoặc khối lệnh. Biến này có thể được truy cập bởi bất kỳ phương thức, constructor hoặc khối lệnh nào của class đó. 
+__Khởi tạo một lần duy nhất:__ Biến static chỉ được khởi tạo một lần duy nhất khi lớp được nạp vào bộ nhớ. Vì vậy, nó tiết kiệm bộ nhớ khi có nhiều đối tượng của lớp đó.
+```Java
+class Counter {
+    static int count = 0; // Biến static
 
-
-
-
-
-
-
-
-
+    Counter() {
+        count++; // Tăng giá trị biến static
+        System.out.println(count);
+    }
+}
+// mỗi khi khởi tạo một giá trị mới thì biến count sẽ tăng lên 
+public class Main {
+    public static void main(String[] args) {
+        Counter c1 = new Counter(); 
+        Counter c2 = new Counter();
+        Counter c3 = new Counter(); 
+    }
+}
+```
